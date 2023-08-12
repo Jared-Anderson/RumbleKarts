@@ -7,12 +7,11 @@ namespace KartGame.KartSystems
         public bool Accelerate;
         public bool Brake;
         public float TurnInput;
-        public bool Submit;
     }
 
     public interface IInput
     {
-        InputData GenerateInput();
+        InputData GenerateInput();  
     }
 
     public abstract class BaseInput : MonoBehaviour, IInput

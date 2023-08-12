@@ -7,7 +7,6 @@ namespace KartGame.KartSystems {
         public string TurnInputName = "Horizontal";
         public string AccelerateButtonName = "Accelerate";
         public string BrakeButtonName = "Brake";
-        public string SubmitButtonName = "Submit";
 
         public override InputData GenerateInput() {
             return new InputData
@@ -15,7 +14,6 @@ namespace KartGame.KartSystems {
                 Accelerate = Input.GetButton(AccelerateButtonName),
                 Brake = Input.GetButton(BrakeButtonName),
                 TurnInput = Input.GetAxis("Horizontal"),
-                Submit = Input.GetButton(SubmitButtonName),
             };
         }
     }
